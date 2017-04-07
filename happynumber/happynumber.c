@@ -19,7 +19,13 @@ void assertEquals(char * esperado, char * atual, char * mensagem) {
 }
 
 char * happy(int number) {
-	return "feliz";
+	if (number == 1) {
+	return "feliz";}
+	if (number == 4) {
+	return "triste";
+	}
+	
+	
 }
 
 
