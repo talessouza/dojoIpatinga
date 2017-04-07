@@ -26,7 +26,8 @@ char * happy(int number) {
 int main(int argc, char *argv[]) {
 	
 	assertEquals("feliz", happy(1), "test 1");
-	
+	assertEquals("triste", happy(4), "test 4");
+		
 	return 0;
 }
 
