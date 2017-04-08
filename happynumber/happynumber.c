@@ -17,11 +17,15 @@ void assertEquals(char * esperado, char * atual, char * mensagem) {
 }
 
 char * happy(int number) {
-	if (number == 1 || number == 10 || number == 100 ) {
+	if (number == 10){
 		return "feliz";
 	}
-		return "triste";
 	
+	if (number == 1 || number == 100 ) {
+		return "feliz";
+	}
+	return "triste";
+
 
 
 }
@@ -33,7 +37,7 @@ int main(int argc, char *argv[]) {
 	assertEquals("triste", happy(4), "test 4");
 	assertEquals("feliz", happy(10), "test 10");
 	assertEquals("feliz", happy(100), "test 100");
-	
+
 	return 0;
 }
 
