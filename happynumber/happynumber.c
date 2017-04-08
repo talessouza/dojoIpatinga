@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <conio2.h>
 
@@ -17,8 +18,26 @@ void assertEquals(char * esperado, char * atual, char * mensagem) {
 }
 
 char * happy(int number) {
+	
+	
 	if (number == 10){
+		
+		char digito[2];
+		char digitos[20];
+		itoa(number, digitos, 10);
+		
+		int n;
+		
+		for (int i=0; i<2;i++ ){
+			digito[0] = digitos[i];
+			digito[1] = '\0';
+			n=atoi(digito);
+			printf("%d ",n);
+		}
+		
+		
 		return "feliz";
+		
 	}
 	
 	if (number == 1 || number == 100 ) {
